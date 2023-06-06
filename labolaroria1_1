@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main(){
+    int n, i, liczba, parzyste = 0; 
+    printf ("ile liczb chcesz wprowadzic \n");
+    scanf ("%d", &n);
+    printf ("wczytano liczbe %d\n", n);
+    for (i = 1; i<=n; i++) 
+        {  scanf ("%d", &liczba);
+            if (liczba % 2 == 0){
+                 parzyste++;       
+                 printf("%d jest parzysta\n",liczba);}  
+            else
+            printf("%d jest nieparzysta\n",liczba);
+        }
+    printf("Wprowadzono %d parzystych liczb  i %d nieparzystych\n",parzyste,n-  parzyste);
+    return 0;
+}
